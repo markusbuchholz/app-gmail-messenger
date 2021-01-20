@@ -9,7 +9,7 @@ from email import encoders
 import os
 
 
-st.title ("WEB Gmail Messenger")
+st.title ("WEB Gmail Messenger !")
 SUBJECT = st.text_input('email subject')
 
 TEXT = st.text_area('area for text email')
@@ -23,7 +23,7 @@ receiver_email = st.sidebar.text_input('receiver email')
 user_attachment = st.file_uploader('File uploader')
 
 def send_email(sender_email,receiver_email, SUBJECT, TEXT, password, user_attachment ):
-    print(user_attachment.name)
+    #print(user_attachment.name)
     msg = MIMEMultipart() 
     msg['From'] = sender_email 
     msg['To'] = receiver_email 
