@@ -21,7 +21,7 @@ password = st.sidebar.text_input('your gmail password')
 
 receiver_email = st.sidebar.text_input('receiver email')
 
-user_attachment = st.file_uploader('File uploader')
+user_attachment = st.file_uploader('File uploader', type=["pdf"])
 
 def send_email(sender_email,receiver_email, SUBJECT, TEXT, password, user_attachment ):
     #print(user_attachment.name)
