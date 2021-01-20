@@ -7,6 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase 
 from email import encoders 
 import os
+from io import BytesIO
 
 
 st.title ("WEB Gmail Messenger !")
