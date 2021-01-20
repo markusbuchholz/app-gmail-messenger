@@ -10,7 +10,7 @@ import os
 from io import BytesIO
 
 
-st.title ("WEB Gmail Messenger !")
+st.title ("WEB Gmail Messenger")
 SUBJECT = st.text_input('email subject')
 
 TEXT = st.text_area('area for text email')
